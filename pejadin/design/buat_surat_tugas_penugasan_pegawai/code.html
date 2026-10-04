@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-tertiary-fixed":"#2f1500","outline":"#74777e","surface-container-highest":"#d3e4fe","primary-container":"#0f2942","primary-fixed":"#d1e4ff","on-primary-fixed-variant":"#314863","surface-container-high":"#dce9ff","error-container":"#ffdad6","surface-variant":"#d3e4fe","on-surface-variant":"#43474d","on-primary-fixed":"#011d35","on-secondary-fixed":"#00174b","primary":"#001428","on-tertiary-container":"#d77503","on-error":"#ffffff","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#003ea8","tertiary-fixed-dim":"#ffb77d","error":"#ba1a1a","on-secondary-container":"#fefcff","surface":"#f8f9ff","primary-fixed-dim":"#b0c9e8","tertiary":"#220e00","on-primary-container":"#7991af","secondary-fixed-dim":"#b4c5ff","on-background":"#0b1c30","tertiary-container":"#401f00","tertiary-fixed":"#ffdcc3","inverse-primary":"#b0c9e8","on-error-container":"#93000a","surface-container-low":"#eff4ff","on-secondary":"#ffffff","inverse-surface":"#213145","surface-tint":"#49607c","surface-container-lowest":"#ffffff","on-surface":"#0b1c30","secondary-fixed":"#dbe1ff","secondary":"#0051d5","surface-container":"#e5eeff","outline-variant":"#c3c6ce","surface-bright":"#f8f9ff","inverse-on-surface":"#eaf1ff","surface-dim":"#cbdbf5","on-tertiary-fixed-variant":"#6e3900","on-primary":"#ffffff","background":"#f8f9ff","secondary-container":"#316bf3"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"0.75rem","space-xl":"1.5rem","space-lg":"1rem","margin":"1.5rem","margin-lg":"2rem","gutter-sm":"0.75rem","space-xs":"0.25rem","gutter-lg":"1.5rem","space-sm":"0.5rem","gutter":"1.25rem","margin-sm":"1rem"},"fontFamily":{"headline-xl":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"table-header":["Inter"],"mono-code":["JetBrains Mono"],"table-data":["Inter"],"label-sm":["Inter"]},"fontSize":{"headline-xl":["30px",{"lineHeight":"38px","fontWeight":"700"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"title-sm":["15px",{"lineHeight":"22px","fontWeight":"600"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"table-header":["12px",{"lineHeight":"16px","fontWeight":"600"}],"mono-code":["12px",{"lineHeight":"16px","fontWeight":"500"}],"table-data":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-primary-container text-on-primary z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-lg flex items-center gap-3 bg-primary border-b border-outline/20"><img alt="Logo PEJADIN" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VGsKcICV4JDUT2cqOhA46PaGOka3sItOWwLqzlfMkoDay4Vyt9FXKS1ekLwesEWxxlhaBBxnhFBgpZnfhoT_UbBDScHtciXBR7n_pJ52VBlvqPSK0XFYd8sGG-h2f4Z53idyBrru1DtJ7BblUB5rZ-XSwkqMxvMMLDUY9iIt4K8YDya4MWbKIL4l_h6WPHvr6qC9CWmmbtpFaiczCm5UbIaSzZgj3HeOrjaBxA8JX0BnvnwtpjzQhd5Sg"/><div class="flex flex-col min-w-0"><span class="font-headline-md text-headline-md tracking-tight text-on-primary leading-tight font-bold truncate">PEJADIN</span><span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider truncate">Satker Pusat RI</span></div></div><div class="p-space-md mx-space-md my-space-sm bg-primary/40 rounded-lg"><div class="flex items-center gap-2 mb-1"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">badge</span><span class="font-label-sm text-label-sm text-primary-fixed font-semibold truncate">Ahmad Fauzi, S.STP</span></div><p class="font-label-sm text-label-sm text-surface-container-high truncate">Operator Keuangan</p><p class="font-mono-code text-mono-code text-primary-fixed-dim/80 text-[10px] mt-0.5 tracking-tighter truncate">NIP. 19850412 201001 1 008</p></div><nav class="px-space-md space-y-space-md mt-1" data-active-classes="bg-secondary text-on-secondary font-semibold"><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm font-semibold uppercase tracking-wider text-primary-fixed-dim/70">Menu Utama</div><a class="flex items-center gap-2 px-space-sm py-2 rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md" data-path="halaman-utama" href="#"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">dashboard</span>Monitoring ST</span><span class="px-1.5 py-0.5 rounded text-[11px] font-semibold bg-surface-container-highest text-on-surface">12</span></a><a class="flex items-center gap-2 px-space-sm py-2 rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md" data-path="buat-surat-tugas" href="#"><span class="material-symbols-outlined text-[18px]">post_add</span>Buat Surat Tugas</a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md" data-path="persetujuan-penerbitan" href="#"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">verified_user</span>Persetujuan PPK</span><span class="px-1.5 py-0.5 rounded text-[11px] font-semibold bg-tertiary-fixed text-on-tertiary-fixed-variant">4 Baru</span></a><a class="flex items-center gap-2 px-space-sm py-2 rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md" data-path="cetak-dokumen" href="#"><span class="material-symbols-outlined text-[18px]">print</span>Cetak Dokumen</a></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm font-semibold uppercase tracking-wider text-primary-fixed-dim/70">Master Data</div><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md" data-path="data-pegawai" href="#"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">group</span>Data Pegawai</span><span class="font-mono-code text-[11px] text-primary-fixed-dim">140</span></a><a class="flex items-center gap-2 px-space-sm py-2 rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md" data-path="tarif-sbm" href="#"><span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>Tarif SBM 38 Prov</a><a class="flex items-center gap-2 px-space-sm py-2 rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md" data-path="pejabat-penanda-tangan" href="#"><span class="material-symbols-outlined text-[18px]">draw</span>Penanda Tangan</a><a class="flex items-center gap-2 px-space-sm py-2 rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md" data-path="dasar-hukum" href="#"><span class="material-symbols-outlined text-[18px]">gavel</span>Dasar Hukum</a><a class="flex items-center gap-2 px-space-sm py-2 rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md" data-path="identitas-satker" href="#"><span class="material-symbols-outlined text-[18px]">domain</span>Identitas Satker</a></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm font-semibold uppercase tracking-wider text-primary-fixed-dim/70">Laporan &amp; Sistem</div><a class="flex items-center gap-2 px-space-sm py-2 rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md" data-path="audit-trail" href="#"><span class="material-symbols-outlined text-[18px]">receipt_long</span>Audit Trail</a><a class="flex items-center gap-2 px-space-sm py-2 rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md" data-path="kelola-akun" href="#"><span class="material-symbols-outlined text-[18px]">manage_accounts</span>Kelola Akun</a></div></nav></div><div class="p-space-md bg-primary border-t border-outline/20"><a class="flex items-center gap-2 px-space-sm py-2 rounded text-error-container hover:bg-error hover:text-on-error transition-colors font-label-md text-label-md" data-path="keluar" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Keluar Sistem</a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-md z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-space-xl flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md min-w-0"><div class="hidden xl:flex items-center gap-2 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="inline-block w-2 h-2 rounded-full bg-secondary"></span><span class="font-mono-code font-semibold text-on-surface">DIPA T.A. 2025</span><span class="text-outline-variant">•</span><span class="font-mono-code text-[11px] truncate">SP-DIPA-023.04.1.412891/2025</span><span class="text-outline-variant">•</span><span class="text-secondary font-semibold">Status: Aktif</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[15px] text-secondary">shield_person</span>Mode: Operator Keuangan</div></div><div class="flex items-center gap-space-md"><div class="relative hidden md:block"><span class="material-symbols-outlined absolute left-2.5 top-2 text-[18px] text-outline">search</span><input class="w-64 pl-8 pr-3 py-1.5 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded border border-outline-variant focus:outline-none focus:border-secondary" placeholder="Cari No. ST / Pegawai (Ctrl+K)" type="text"/></div><button class="relative p-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-2 pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-sm text-label-sm font-semibold text-on-surface leading-tight">A. Fauzi</span><span class="font-label-sm text-[10px] text-on-surface-variant leading-none">Operator</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Context Header & Actions -->
+<div class="px-space-xl py-space-lg bg-surface-container-low shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Sistem Perjalanan Dinas</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Penugasan</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-secondary font-semibold">Formulir Penerbitan Baru</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+          Buat Surat Tugas &amp; Pengajuan SPD Baru
+        </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-3xl">
+          Isi data penugasan dinas, rincian anggaran DIPA, dan daftar pelaksana. Perhitungan uang harian &amp; pagu akomodasi dihitung otomatis berdasarkan PMK SBM 2025.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap self-start md:self-center">
+<button class="px-space-md py-2 rounded bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Simpan Draft</span>
+</button>
+<button class="px-space-md py-2 rounded bg-surface-container-highest text-on-surface-variant font-label-md text-label-md hover:bg-surface-dim transition-colors flex items-center gap-1.5 shadow-sm" id="btnPreviewValidation" type="button">
+<span class="material-symbols-outlined text-[18px]">rule</span>
+<span>Cek Validasi &amp; Pratinjau</span>
+</button>
+<button class="px-space-lg py-2 rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all flex items-center gap-2 shadow-md" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Ajukan ke PPK</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Body Content -->
+<div class="max-w-7xl mx-auto w-full px-space-xl py-space-xl space-y-space-xl">
+<!-- Bagian 1: Informasi Dasar Penugasan & Anggaran -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm space-y-space-lg">
+<div class="flex items-center justify-between pb-space-sm bg-gradient-to-r from-transparent via-surface-container-highest/20 to-transparent">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 bg-secondary rounded-sm inline-block"></span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">
+            1. Informasi Dasar Penugasan &amp; Pembebanan Anggaran
+          </h2>
+</div>
+<span class="px-2.5 py-0.5 rounded text-[11px] font-semibold bg-surface-container-high text-secondary">
+          Wajib Lengkap
+        </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Maksud Perjalanan Dinas (Col 12) -->
+<div class="lg:col-span-12 space-y-1">
+<label class="block font-label-md text-label-md font-semibold text-on-surface">
+            Maksud Perjalanan Dinas <span class="text-error">*</span>
+</label>
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded p-3 focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-sm" placeholder="Tuliskan uraian maksud penugasan dinas kedinasan..." rows="3">Koordinasi dan Rekonsiliasi Laporan Keuangan Semester I Satker Wilayah Jawa Timur</textarea>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Uraikan secara jelas tujuan perjalanan dinas sesuai ketentuan Permenkeu.</span>
+</div>
+<!-- Dasar Penugasan / Nota Dinas -->
+<div class="lg:col-span-6 space-y-1">
+<label class="block font-label-md text-label-md font-semibold text-on-surface">
+            Dasar Penugasan / Undangan / Nota Dinas <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-outline">description</span>
+<input class="w-full pl-10 pr-3 py-2 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-sm" type="text" value="UND-291/SJ.3/2025 tgl 15 Feb 2025"/>
+</div>
+</div>
+<!-- Alat Angkutan / Moda Transportasi -->
+<div class="lg:col-span-6 space-y-1">
+<label class="block font-label-md text-label-md font-semibold text-on-surface">
+            Moda Transportasi Utama <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-outline">flight</span>
+<select class="w-full pl-10 pr-8 py-2 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-sm appearance-none">
+<option selected="">Pesawat Udara / Udara Komersial</option>
+<option>Kereta Api Dinas (Eksekutif)</option>
+<option>Kendaraan Operasional Kantor / Darat</option>
+<option>Kapal Laut Komersial (Pelni)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Kota Asal (Readonly) -->
+<div class="lg:col-span-3 space-y-1">
+<label class="block font-label-md text-label-md font-semibold text-on-surface">
+            Kota Keberangkatan (Asal)
+          </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-outline">location_on</span>
+<input class="w-full pl-10 pr-3 py-2 bg-surface-container text-on-surface-variant font-body-md text-body-md rounded cursor-not-allowed shadow-inner" readonly="" type="text" value="Jakarta (DKI Jakarta)"/>
+</div>
+</div>
+<!-- Kota Tujuan & SBM -->
+<div class="lg:col-span-5 space-y-1">
+<label class="block font-label-md text-label-md font-semibold text-on-surface">
+            Kota Tujuan &amp; Provinsi Acuan SBM <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-secondary">near_me</span>
+<select class="w-full pl-10 pr-8 py-2 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-sm appearance-none">
+<option selected="">Kota Surabaya (Jawa Timur) — SBM: Rp 410.000 / hari</option>
+<option>Kota Denpasar (Bali) — SBM: Rp 480.000 / hari</option>
+<option>Kota Medan (Sumatera Utara) — SBM: Rp 370.000 / hari</option>
+<option>Kota Makassar (Sulawesi Selatan) — SBM: Rp 430.000 / hari</option>
+<option>Kota Semarang (Jawa Tengah) — SBM: Rp 370.000 / hari</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Periode Perjalanan -->
+<div class="lg:col-span-4 space-y-1">
+<label class="block font-label-md text-label-md font-semibold text-on-surface">
+            Periode Penugasan <span class="text-error">*</span>
+</label>
+<div class="grid grid-cols-2 gap-2">
+<input class="w-full px-2.5 py-2 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/40" type="date" value="2025-02-25"/>
+<input class="w-full px-2.5 py-2 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/40" type="date" value="2025-02-28"/>
+</div>
+<div class="flex items-center gap-1.5 pt-1 text-secondary font-mono-code text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[14px]">date_range</span>
+<span>Durasi: 4 Hari Kerja / 3 Malam Inap</span>
+</div>
+</div>
+<!-- MAK DIPA Dropdown -->
+<div class="lg:col-span-7 space-y-1">
+<label class="block font-label-md text-label-md font-semibold text-on-surface">
+            Mata Anggaran Keluaran (MAK DIPA 2025) <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-outline">account_balance</span>
+<select class="w-full pl-10 pr-8 py-2 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-sm appearance-none">
+<option selected="">524111 - Belanja Perjalanan Dinas Biasa Pusat [Sisa Pagu: Rp 142.500.000]</option>
+<option>524113 - Belanja Perjalanan Dinas Dalam Kota [Sisa Pagu: Rp 45.200.000]</option>
+<option>524119 - Belanja Perjalanan Dinas Paket Meeting [Sisa Pagu: Rp 88.000.000]</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Jenis Pembebanan Kuitansi -->
+<div class="lg:col-span-5 space-y-1">
+<label class="block font-label-md text-label-md font-semibold text-on-surface">
+            Metode Pembebanan Kuitansi <span class="text-error">*</span>
+</label>
+<div class="grid grid-cols-2 gap-2 pt-0.5">
+<label class="flex items-center gap-2 p-2 bg-surface-container-high rounded cursor-pointer transition-all hover:bg-surface-container-highest">
+<input checked="" class="text-secondary focus:ring-0 cursor-pointer" name="payment_type" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">LS (Langsung)</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">Transfer pelaksana</span>
+</div>
+</label>
+<label class="flex items-center gap-2 p-2 bg-surface-container rounded cursor-pointer transition-all hover:bg-surface-container-high">
+<input class="text-secondary focus:ring-0 cursor-pointer" name="payment_type" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">UP (Persediaan)</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">Melalui Bendahara</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Bagian 2: Daftar Pelaksana Penugasan (Multi-Personel) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm space-y-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pb-2">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-6 bg-secondary-container rounded-sm inline-block"></span>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">
+              2. Daftar Pelaksana &amp; Komponen Biaya Rill SBM
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rincian pagu harian otomatis, akomodasi, dan transportasi per pegawai.</p>
+</div>
+<span class="px-2.5 py-1 rounded-full text-[12px] font-bold bg-primary text-on-primary">
+            3 Pegawai Ditugaskan
+          </span>
+</div>
+<button class="px-space-md py-2 rounded bg-surface-container-high text-on-secondary-fixed-variant hover:bg-secondary-fixed transition-colors font-label-md text-label-md font-semibold flex items-center gap-2 self-start sm:self-auto shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>+ Tambah Pelaksana (Daftar 140 Pegawai)</span>
+</button>
+</div>
+<!-- Personel Card 1: Eselon III (Ketua Tim) -->
+<div class="bg-surface-container-low rounded-lg p-space-lg shadow-sm space-y-space-md transition-all hover:shadow-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 pb-2 bg-gradient-to-r from-transparent via-surface-container-high to-transparent">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold text-[14px]">
+              HW
+            </div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">Dr. Hendra Wijaya, S.E., M.Si</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-primary-fixed text-on-primary-fixed">Ketua Tim</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-highest text-on-surface-variant">Gol. IV/b</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-secondary-fixed text-on-secondary-fixed-variant">Eselon III</span>
+</div>
+<p class="font-mono-code text-mono-code text-[11px] text-on-surface-variant mt-0.5">NIP. 19780412 200212 1 003 • Jabatan: Kepala Bagian Evaluasi &amp; Pelaporan</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end md:self-center">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant" title="Duplikasi Estimasi"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1.5 rounded hover:bg-error-container text-error" title="Hapus"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<!-- 5 Item Financial Breakdown Grid -->
+<div class="grid grid-cols-2 md:grid-cols-5 gap-3 pt-1">
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Uang Harian (4 Hari)</span>
+<span class="font-title-sm text-[14px] font-bold text-on-surface">Rp 1.640.000</span>
+<span class="font-mono-code text-[10px] text-secondary block mt-0.5">@ Rp 410.000 (Otomatis)</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Uang Representasi</span>
+<span class="font-title-sm text-[14px] font-bold text-on-surface">Rp 600.000</span>
+<span class="font-mono-code text-[10px] text-secondary block mt-0.5">@ Rp 150.000 (Eselon III)</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Tiket Pesawat PP (Riil)</span>
+<input class="w-full mt-1 bg-surface-container-low px-2 py-0.5 text-on-surface font-title-sm text-[13px] font-semibold rounded focus:ring-1 focus:ring-secondary/50 outline-none" type="text" value="Rp 2.850.000"/>
+<span class="font-mono-code text-[10px] text-on-surface-variant block mt-0.5">Garuda GA-312 PP</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Akomodasi (3 Malam)</span>
+<input class="w-full mt-1 bg-surface-container-low px-2 py-0.5 text-on-surface font-title-sm text-[13px] font-semibold rounded focus:ring-1 focus:ring-secondary/50 outline-none" type="text" value="Rp 2.250.000"/>
+<span class="font-mono-code text-[10px] text-secondary block mt-0.5">3 x @750rb (Maks SBM 1,05jt)</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Taksi Bandara (PP)</span>
+<input class="w-full mt-1 bg-surface-container-low px-2 py-0.5 text-on-surface font-title-sm text-[13px] font-semibold rounded focus:ring-1 focus:ring-secondary/50 outline-none" type="text" value="Rp 340.000"/>
+<span class="font-mono-code text-[10px] text-on-surface-variant block mt-0.5">Standar SBM Bandara SUB</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 px-1 text-on-surface">
+<div class="flex items-center gap-1.5 text-secondary text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Semua pagu biaya memenuhi batas standar SBM PMK 2025</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-[11px] text-on-surface-variant">Subtotal Estimasi:</span>
+<span class="font-title-sm text-[15px] font-bold text-on-surface ml-2">Rp 7.680.000</span>
+</div>
+</div>
+</div>
+<!-- Personel Card 2: Golongan III/c (Anggota) -->
+<div class="bg-surface-container-low rounded-lg p-space-lg shadow-sm space-y-space-md transition-all hover:shadow-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 pb-2 bg-gradient-to-r from-transparent via-surface-container-high to-transparent">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[14px]">
+              RK
+            </div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">Rina Kusuma Dewi, S.Kom</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container text-on-surface-variant">Anggota Tim</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-highest text-on-surface-variant">Gol. III/c</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-high text-on-surface-variant">Pranata Komputer Ahli Muda</span>
+</div>
+<p class="font-mono-code text-mono-code text-[11px] text-on-surface-variant mt-0.5">NIP. 19890520 201402 2 001</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end md:self-center">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant" title="Duplikasi Estimasi"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1.5 rounded hover:bg-error-container text-error" title="Hapus"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-3 pt-1">
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Uang Harian (4 Hari)</span>
+<span class="font-title-sm text-[14px] font-bold text-on-surface">Rp 1.640.000</span>
+<span class="font-mono-code text-[10px] text-secondary block mt-0.5">@ Rp 410.000 (Otomatis)</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm opacity-60">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Uang Representasi</span>
+<span class="font-title-sm text-[14px] font-bold text-on-surface">Rp 0</span>
+<span class="font-mono-code text-[10px] text-on-surface-variant block mt-0.5">Bukan Pejabat Eselon</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Tiket Pesawat PP (Riil)</span>
+<input class="w-full mt-1 bg-surface-container-low px-2 py-0.5 text-on-surface font-title-sm text-[13px] font-semibold rounded focus:ring-1 focus:ring-secondary/50 outline-none" type="text" value="Rp 2.850.000"/>
+<span class="font-mono-code text-[10px] text-on-surface-variant block mt-0.5">Garuda GA-312 PP</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Akomodasi (3 Malam)</span>
+<input class="w-full mt-1 bg-surface-container-low px-2 py-0.5 text-on-surface font-title-sm text-[13px] font-semibold rounded focus:ring-1 focus:ring-secondary/50 outline-none" type="text" value="Rp 1.800.000"/>
+<span class="font-mono-code text-[10px] text-secondary block mt-0.5">3 x @600rb (Pagu Maks 660rb)</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Taksi Bandara (PP)</span>
+<input class="w-full mt-1 bg-surface-container-low px-2 py-0.5 text-on-surface font-title-sm text-[13px] font-semibold rounded focus:ring-1 focus:ring-secondary/50 outline-none" type="text" value="Rp 340.000"/>
+<span class="font-mono-code text-[10px] text-on-surface-variant block mt-0.5">Standar SBM Bandara SUB</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 px-1 text-on-surface">
+<div class="flex items-center gap-1.5 text-secondary text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Semua pagu biaya memenuhi batas standar SBM PMK 2025</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-[11px] text-on-surface-variant">Subtotal Estimasi:</span>
+<span class="font-title-sm text-[15px] font-bold text-on-surface ml-2">Rp 6.630.000</span>
+</div>
+</div>
+</div>
+<!-- Personel Card 3: Alert Trigger SBM (Bambang Sudiro) -->
+<div class="bg-surface-container-low rounded-lg p-space-lg shadow-sm space-y-space-md transition-all hover:shadow-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 pb-2 bg-gradient-to-r from-transparent via-surface-container-high to-transparent">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-primary-fixed flex items-center justify-center font-bold text-[14px]">
+              BS
+            </div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">Bambang Sudiro, A.Md</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container text-on-surface-variant">Anggota Tim</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-highest text-on-surface-variant">Gol. II/d</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-high text-on-surface-variant">Pengelola Dokumen Keuangan</span>
+</div>
+<p class="font-mono-code text-mono-code text-[11px] text-on-surface-variant mt-0.5">NIP. 19930815 201801 1 002</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end md:self-center">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant" title="Duplikasi Estimasi"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1.5 rounded hover:bg-error-container text-error" title="Hapus"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-3 pt-1">
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Uang Harian (4 Hari)</span>
+<span class="font-title-sm text-[14px] font-bold text-on-surface">Rp 1.640.000</span>
+<span class="font-mono-code text-[10px] text-secondary block mt-0.5">@ Rp 410.000 (Otomatis)</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm opacity-60">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Uang Representasi</span>
+<span class="font-title-sm text-[14px] font-bold text-on-surface">Rp 0</span>
+<span class="font-mono-code text-[10px] text-on-surface-variant block mt-0.5">Bukan Pejabat Eselon</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Tiket Pesawat PP (Riil)</span>
+<input class="w-full mt-1 bg-surface-container-low px-2 py-0.5 text-on-surface font-title-sm text-[13px] font-semibold rounded focus:ring-1 focus:ring-secondary/50 outline-none" type="text" value="Rp 2.850.000"/>
+<span class="font-mono-code text-[10px] text-on-surface-variant block mt-0.5">Garuda GA-312 PP</span>
+</div>
+<div class="bg-error-container/40 p-2.5 rounded shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[11px] text-error font-semibold block">Akomodasi (3 Malam)</span>
+<span class="material-symbols-outlined text-[14px] text-error">warning</span>
+</div>
+<input class="w-full mt-1 bg-surface-container-lowest text-error font-title-sm text-[13px] font-bold rounded focus:ring-1 focus:ring-error outline-none p-1" type="text" value="Rp 2.400.000"/>
+<span class="font-mono-code text-[10px] text-error block mt-0.5">3 x @800rb (Melebihi SBM)</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded shadow-sm">
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Taksi Bandara (PP)</span>
+<input class="w-full mt-1 bg-surface-container-low px-2 py-0.5 text-on-surface font-title-sm text-[13px] font-semibold rounded focus:ring-1 focus:ring-secondary/50 outline-none" type="text" value="Rp 340.000"/>
+<span class="font-mono-code text-[10px] text-on-surface-variant block mt-0.5">Standar SBM Bandara SUB</span>
+</div>
+</div>
+<!-- Warning Box Compliance SBM -->
+<div class="bg-tertiary-fixed/30 p-space-md rounded-md flex items-start gap-2.5 text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[20px] text-on-tertiary-container shrink-0">report_problem</span>
+<div class="text-[12px] leading-relaxed">
+<strong class="font-semibold text-on-tertiary-fixed">Peringatan Batas Maksimal SBM:</strong>
+            Tarif hotel Rp 800.000/malam melebihi batas tarif SBM PMK 2025 wilayah Jawa Timur untuk Golongan II (Maksimal Rp 580.000/malam).
+            Selisih biaya sebesar <strong>Rp 660.000 (3 malam)</strong> wajib disertai Surat Pernyataan Tanggung Jawab Mutlak (SPTJM) atau disesuaikan saat kuitansi rampung riil diajukan ke Verifikator Keuangan.
+          </div>
+</div>
+<div class="flex items-center justify-between pt-1 px-1">
+<span class="font-label-sm text-[11px] text-on-surface-variant">Estimasi Total Pegawai 3:</span>
+<span class="font-title-sm text-[15px] font-bold text-on-surface">Rp 5.850.000</span>
+</div>
+</div>
+</div>
+<!-- Bagian 3: Ringkasan Estimasi & Validasi Anggaran (Sticky Summary Dock) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-lg space-y-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Visual Progress Ring & Big Number -->
+<div class="lg:col-span-4 flex items-center gap-4 bg-surface-container-low p-space-md rounded-lg">
+<div class="relative w-16 h-16 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="14.1, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-mono-code font-bold text-[11px] text-on-surface">14.1%</span>
+</div>
+<div>
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase tracking-wider block">Total Estimasi Beban DIPA</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight block">Rp 20.160.000</span>
+<span class="font-mono-code text-[11px] text-secondary font-semibold">MAK: 524111 (3 Personel)</span>
+</div>
+</div>
+<!-- Validasi Status Badges -->
+<div class="lg:col-span-8 space-y-2">
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+<span class="font-body-sm text-[13px] font-medium">Semua pelaksana (3 orang) bebas dari jadwal dinas tumpang-tindih pada 25 Feb - 28 Feb 2025.</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">account_balance_wallet</span>
+<span class="font-body-sm text-[13px] font-medium">Pagu DIPA akun 524111 mencukupi: Saldo saat ini Rp 142.500.000, tersisa <strong>Rp 122.340.000</strong> pasca persetujuan.</span>
+</div>
+</div>
+</div>
+<!-- Compliance Information Bar -->
+<div class="flex items-center gap-3 p-3 rounded bg-surface-container-high text-on-surface-variant text-[12px]">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">gavel</span>
+<p class="leading-normal">
+          Perhitungan tarif mengacu pada <strong>Peraturan Menteri Keuangan Nomor 49/PMK.02/2023</strong> tentang Standar Biaya Masukan Tahun Anggaran 2024/2025. Seluruh bukti riil pengeluaran wajib diunggah pada Modul Kuitansi Rampung maksimal 5 hari kerja setelah tanggal kepulangan.
+        </p>
+</div>
+<!-- Action Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-2">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+<span>Data terenkripsi dan tercatat otomatis dalam Audit Trail Satker</span>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors font-semibold shadow-sm" type="button">
+            Batal
+          </button>
+<button class="w-full sm:w-auto px-space-xl py-2.5 rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all font-semibold flex items-center justify-center gap-2 shadow-md" type="button">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Finalisasi &amp; Ajukan ke PPK</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script for Micro-interactions -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btnPreview = document.getElementById('btnPreviewValidation');
+      if (btnPreview) {
+        btnPreview.addEventListener('click', () => {
+          alert('Pemeriksaan Integritas Sistem:\n- Beban MAK 524111: Valid (Pagu Cukup)\n- Verifikasi Tabrakan Jadwal: Bebas Jadwal Lain\n- Catatan SBM: 1 Peringatan batas akomodasi pada pelaksana Bambang Sudiro.');
+        });
+      }
+    });
+  </script>
+</div></main></div></body></html>

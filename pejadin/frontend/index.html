@@ -1,0 +1,121 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PEJADIN</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined" rel="stylesheet">
+<style>
+:root{--nav:#142b42;--nav-soft:#203c56;--accent:#256b68;--accent-dark:#1c5553;--bg:#f4f6f8;--surface:#fff;--surface-soft:#f6f8fa;--border:#e1e7ec;--text:#172b3a;--muted:#71808d;--danger:#b54745;--shadow:0 8px 24px rgba(22,42,58,.055)}
+*{box-sizing:border-box}
+body{margin:0;font:14px Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+h1,h2,h3{font-family:'Plus Jakarta Sans',Inter,sans-serif;margin:0;color:var(--text);letter-spacing:-.025em}
+h2{font-size:24px;font-weight:700}h3{font-size:17px;font-weight:600}
+.ms{font-family:'Material Symbols Outlined';font-size:20px;line-height:1;vertical-align:middle}
+#app{display:flex;min-height:100vh}
+aside{flex:0 0 252px;width:252px;background:var(--nav);color:#edf3f5;padding:24px 14px 18px;position:sticky;top:0;height:100vh;overflow:auto;display:flex;flex-direction:column}
+aside .logo{font:700 21px 'Plus Jakarta Sans',Inter,sans-serif;letter-spacing:.035em;padding:0 14px 26px;color:#fff}
+aside .logo:after{content:'PERJALANAN DINAS';display:block;margin-top:3px;color:#9eb2bd;font:500 9px Inter,sans-serif;letter-spacing:.16em}
+aside small{display:block;padding:18px 14px 7px;color:#9aafba;font-size:10px;font-weight:600;letter-spacing:.12em}
+aside a{display:flex;gap:12px;align-items:center;min-height:42px;padding:9px 13px;margin:2px 0;border-radius:8px;color:#d8e2e7;text-decoration:none;cursor:pointer;transition:background .16s,color .16s}
+aside a .ms{color:#9fb3bf}
+aside a:hover{background:rgba(255,255,255,.07);color:#fff}
+aside a.on{background:var(--nav-soft);color:#fff;box-shadow:inset 3px 0 #8fc1b8}
+aside a.on .ms{color:#a9d2c9}
+aside small:last-child{margin-top:auto;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);line-height:1.7;color:#c4d1d7;letter-spacing:0}
+main{flex:1;min-width:0;max-width:1600px;margin:0 auto;padding:34px clamp(22px,4vw,58px)}
+.bar{display:flex;gap:12px;align-items:center;margin-bottom:22px;flex-wrap:wrap}
+.bar h2{flex:1;min-width:220px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:22px;margin-bottom:18px;box-shadow:var(--shadow);overflow:auto}
+table{width:100%;border-collapse:separate;border-spacing:0}
+th{text-align:left;background:var(--surface-soft);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.075em;color:#637481}
+th,td{padding:12px 14px;border-bottom:1px solid #edf0f2;white-space:nowrap}
+th:first-child{border-radius:8px 0 0 8px}th:last-child{border-radius:0 8px 8px 0}
+tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#f8fafb}
+tr.warn{background:#fff2ed}
+input,select,textarea{width:100%;min-height:40px;padding:9px 12px;border:1px solid #d7e0e5;border-radius:7px;font:inherit;color:var(--text);background:#fff;transition:border-color .15s,box-shadow .15s}
+input::placeholder{color:#9aa7b0}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#6caaa2;box-shadow:0 0 0 3px rgba(37,107,104,.12)}
+label{display:block;font-size:12px;font-weight:600;color:#536471}
+label input,label select,label textarea{display:block;margin-top:6px}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:16px;margin-bottom:18px}
+button,.btn{background:var(--accent);color:#fff;border:1px solid var(--accent);border-radius:7px;padding:10px 16px;font:600 13px Inter,sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:7px;transition:background .15s,border-color .15s,transform .15s}
+button:hover,.btn:hover{background:var(--accent-dark);border-color:var(--accent-dark)}
+button:active,.btn:active{transform:translateY(1px)}
+button:focus-visible,.btn:focus-visible,aside a:focus-visible{outline:3px solid rgba(82,160,150,.45);outline-offset:2px}
+.btn2{background:#fff;color:var(--accent);border-color:#b9d0cc}.btn2:hover{background:#f1f7f6;color:var(--accent-dark);border-color:#8fb8b1}
+.bd{background:var(--danger);border-color:var(--danger)}.bd:hover{background:#953c3a;border-color:#953c3a}
+.b{display:inline-flex;align-items:center;padding:4px 10px;border-radius:99px;font-size:10px;font-weight:700;letter-spacing:.035em;background:#eaf0f3;color:#455967}
+.DRAFT{background:#edf0f2;color:#596773}.DIAJUKAN{background:#fff2d8;color:#8a6215}.TERBIT{background:#e5effa;color:#315e88}.SELESAI{background:#e4f2ec;color:#347154}.DIBATALKAN{background:#fbe9e7;color:#9a4943}
+#login{width:min(420px,calc(100% - 32px));margin:12vh auto;background:#fff;padding:34px;border-radius:14px;border:1px solid var(--border);box-shadow:0 18px 50px rgba(22,42,58,.12)}
+#login h2{font-size:28px;color:var(--nav)}
+#login>p{margin:7px 0 26px!important;color:var(--muted)!important;font-size:13px}
+#login label{margin-bottom:16px}
+#login button{width:100%;margin-top:4px}
+#login p:last-child{margin:18px 0 0!important;font-size:11px!important;text-align:center;color:var(--muted)!important}
+#toast{position:fixed;top:18px;right:18px;background:var(--danger);color:#fff;padding:13px 17px;border-radius:9px;box-shadow:0 8px 24px rgba(22,42,58,.2);display:none;max-width:min(420px,calc(100% - 36px));z-index:9}
+@media(max-width:760px){
+ #app{display:block}
+ aside{position:sticky;top:0;z-index:5;width:100%;height:auto;max-height:44vh;overflow-y:auto;padding:14px 12px 12px;display:block}
+ aside .logo{padding:0 8px 12px}
+ aside .logo:after{display:inline;margin-left:9px}
+ aside small{padding:12px 8px 5px}
+ aside small:last-child{margin-top:10px;padding-top:10px}
+ aside a{display:inline-flex;min-height:38px;padding:8px 10px;margin:2px;font-size:12px}
+ aside a .ms{font-size:17px}
+ main{padding:24px 16px}
+ .card{padding:17px;border-radius:10px}
+}
+@media(max-width:480px){
+ h2{font-size:21px}
+ main{padding:20px 12px}
+ .bar{gap:9px}
+ .bar h2{min-width:100%;margin-bottom:2px}
+ .g{grid-template-columns:1fr}
+ th,td{padding:10px}
+}
+</style></head><body><div id="toast"></div><div id="root"></div>
+<script>
+const $=s=>document.querySelector(s),rp=n=>'Rp'+Number(n||0).toLocaleString('id-ID');let TOK=localStorage.t,U=null;
+const toast=(m,ok)=>{const t=$('#toast');t.textContent=m;t.style.background=ok?'#15803d':'';t.style.display='block';setTimeout(()=>t.style.display='none',4500)};
+async function api(p,o={}){const r=await fetch('/api'+p,{method:o.method||(o.body?'POST':'GET'),headers:{'Content-Type':'application/json',Authorization:'Bearer '+TOK},body:o.body?JSON.stringify(o.body):undefined});
+ if(r.status==401&&p!='/login'){logout();throw 0}const d=await r.json().catch(()=>({}));if(!r.ok){const e=d.detail?.error;toast(e?(e.code.startsWith('V')?e.code+': ':'')+e.message:'Error '+r.status);throw e}return d}
+const logout=()=>{localStorage.removeItem('t');TOK=null;U=null;draw()};
+const ALL=['ADMIN','OPERATOR','PPK','BENDAHARA','PEGAWAI'],M=[['Menu Utama'],['dash','Halaman Utama','home',ALL],['buat','Buat Surat Tugas','add_circle',['OPERATOR']],['setuju','Persetujuan / Penerbitan','task_alt',['PPK']],['cetak','Cetak Dokumen','print',ALL],
+['Master Data'],['pegawai','Data Pegawai','groups',[]],['tarif','Tarif SBM','payments',[]],['pejabat','Pejabat Penanda Tangan','draw',[]],['dasar_hukum','Dasar Hukum','gavel',[]],['satker','Identitas Satker','apartment',[]],
+['Laporan & Log'],['audit','Audit Trail','history',[]],['Pengaturan Sistem'],['users','Kelola Akun','manage_accounts',[]]];
+const ok=m=>U.role=='ADMIN'||m[3].includes(U.role);
+async function draw(){if(!TOK)return $('#root').innerHTML=`<form id=login><h2>PEJADIN</h2><p style="color:#43474d">Sistem Informasi Perjalanan Dinas</p><label>Username<input name=username value=admin></label><label>Password<input type=password name=password value=admin123></label><button style="width:100%">Masuk</button><p style="font-size:12px;color:#74777e">Demo: admin, operator, ppk, bendahara, pegawai (password: nama+123)</p></form>`,$('#login').onsubmit=async e=>{e.preventDefault();const r=await api('/login',{body:Object.fromEntries(new FormData(e.target))});TOK=localStorage.t=r.token;U=r.user;location.hash='dash';draw()};
+ if(!U)U=await api('/me');const mn=M.filter((m,i)=>m.length==1?M.slice(i+1).find(x=>x.length>1&&true)&&M.slice(i+1,M.findIndex((x,j)=>j>i&&x.length==1)<0?99:M.findIndex((x,j)=>j>i&&x.length==1)).some(ok):ok(m));
+ $('#root').innerHTML=`<div id=app><aside><div class=logo>PEJADIN</div>${mn.map(m=>m.length==1?`<small>${m[0].toUpperCase()}</small>`:`<a data-r="${m[0]}"><span class=ms>${m[2]}</span>${m[1]}</a>`).join('')}<a onclick="logout()"><span class=ms>logout</span>Keluar</a><small>${U.nama} · ${U.role}</small></aside><main id=m></main></div>`;route()}
+const R={},H=()=>location.hash.slice(1)||'dash';
+async function route(){const[h,a]=H().split('/');document.querySelectorAll('aside a[data-r]').forEach(x=>{x.classList.toggle('on',x.dataset.r==h);x.href='#'+x.dataset.r});
+ const f=R[h]||(['pegawai','tarif','pejabat','dasar_hukum','users'].includes(h)?()=>master(h):null);if(f)f(a);}
+addEventListener('hashchange',()=>U&&route());
+const fd=e=>Object.fromEntries(new FormData(e));const inp=(n,l,t='text',v='',required=false)=>`<label>${l}<input name=${n} type=${t} value="${v}" ${required?'required':''}></label>`;
+const sel=(n,l,o,required=false)=>`<label>${l}<select name=${n} ${required?'required':''}>${o.map(x=>{const [v,t]=Array.isArray(x)?x:[x,x];return `<option value="${v}">${t}</option>`}).join('')}</select></label>`;
+const badge=s=>`<span class="b ${s}">${s}</span>`;
+function table(cols,rows,act){return `<table><tr>${cols.map(c=>`<th>${c[1]}</th>`).join('')}${act?'<th>Aksi</th>':''}</tr>${rows.map(r=>`<tr class="${r.flag?'warn':''}">${cols.map(c=>`<td>${c[2]?c[2](r):r[c[0]]??''}</td>`).join('')}${act?`<td>${act(r)}</td>`:''}</tr>`).join('')||'<tr><td>Belum ada data</td></tr>'}</table>`}
+R.dash=async()=>{$('#m').innerHTML=`<div class=bar><h2>Monitoring Surat Tugas</h2><input id=q placeholder="Cari nomor, maksud, tujuan..." style="width:260px"><select id=st style="width:140px"><option value="">Semua status</option>${['DRAFT','DIAJUKAN','TERBIT','SELESAI','DIBATALKAN'].map(x=>`<option>${x}</option>`)}</select>
+ ${['OPERATOR','PPK','BENDAHARA','ADMIN'].includes(U.role)?`<select id=dl style="width:150px"><option value="">Unduh Laporan</option><option value=xlsx>Excel (.xlsx)</option><option value=pdf>PDF</option></select>`:''}${U.role=='OPERATOR'||U.role=='ADMIN'?`<a class=btn href="#buat">+ Buat Surat Tugas</a>`:''}</div><div class=card id=t></div>`;
+ const L=async()=>{const r=await api(`/st?cari=${encodeURIComponent($('#q').value)}&status=${$('#st').value}`);$('#t').innerHTML=table([['id','No'],['nomor','Nomor ST',r=>r.nomor||'-'],['tujuan','Tujuan',r=>`${r.tujuan}<br><small>${r.provinsi}</small>`],['maksud','Maksud',r=>(r.maksud||'').slice(0,50)],['tgl','Tanggal',r=>`${r.tgl_berangkat} s/d ${r.tgl_kembali}`],['jml','Pelaksana'],['total','Total',r=>rp(r.total)],['status','Status',r=>badge(r.status)],['dibuat_oleh','Dibuat oleh']],r,r=>`<a href="#detail/${r.id}">Preview</a>`)};
+ $('#q').oninput=$('#st').onchange=L;if($('#dl'))$('#dl').onchange=async e=>{const f=e.target.value;e.target.value='';if(f=='pdf')window.open(`/api/laporan?format=pdf&status=${$('#st').value}&token=${TOK}`);else if(f){const r=await fetch(`/api/laporan?format=xlsx&status=${$('#st').value}`,{headers:{Authorization:'Bearer '+TOK}});const a=document.createElement('a');a.href=URL.createObjectURL(await r.blob());a.download='rekap_surat_tugas.xlsx';a.click()}};L()};
+R.buat=async()=>{const pv=await api('/ref/tarif');const S=await api('/ref/satker');$('#m').innerHTML=`<div class=bar><h2>Buat Surat Tugas</h2></div><form class=card id=f><div class=g>${inp('maksud','Maksud perjalanan','text','',true)}${inp('asal','Asal','text','Jakarta',true)}${inp('tujuan','Tujuan (kota)','text','',true)}${sel('provinsi','Provinsi tarif',[...new Set(pv.map(x=>x.provinsi))],true)}${inp('tgl_berangkat','Tanggal berangkat','date','',true)}${inp('tgl_kembali','Tanggal kembali','date','',true)}${inp('alat','Alat angkutan','text','Pesawat',true)}${inp('akun','Akun anggaran','text',S.akun_default,true)}${sel('jenis','Jenis kuitansi',['UP','LS'],true)}</div><button>Simpan Draft & Tambah Pelaksana</button></form>`;
+ $('#f').onsubmit=async e=>{e.preventDefault();const r=await api('/st',{body:fd(e.target)});location.hash='detail/'+r.id}};
+R.detail=async id=>{const s=await api('/st/'+id),pg=await api('/ref/pegawai'),d=s.status=='DRAFT'&&['OPERATOR','ADMIN'].includes(U.role),P=['PPK','ADMIN'].includes(U.role);
+ const b=(a,l,c='')=>`<button class="${c}" onclick="act(${id},'${a}')">${l}</button> `;
+ $('#m').innerHTML=`<div class=bar><h2>Surat Tugas #${s.id} ${badge(s.status)}</h2>${d&&s.spd.length?b('ajukan','Ajukan ke PPK'):''}${P&&s.status=='DIAJUKAN'?b('terbitkan','Terbitkan')+b('kembalikan','Kembalikan','btn2')+b('batalkan','Batalkan','bd'):''}${P&&s.status=='TERBIT'||s.status=='TERBIT'&&U.role=='OPERATOR'?b('selesaikan','Tandai Selesai'):''}${d?`<button class=bd onclick="del(${id})">Hapus</button>`:''}</div>
+ <div class=card><b>${s.maksud||''}</b><br>${s.asal} → ${s.tujuan} (${s.provinsi}) · ${s.tgl_berangkat} s/d ${s.tgl_kembali} (${s.lama} hari) · ${s.alat} · Nomor: <b>${s.nomor||'-'}</b>${s.alasan?`<br>Catatan: ${s.alasan}`:''}</div>
+ ${d?`<form class=card id=sp><h3>Tambah Pelaksana</h3><div class=g>${sel('pegawai_id','Pegawai',pg.map(p=>[p.id,`${p.nama} (${p.eselon})`]))}${inp('hari','Hari (kosong = '+s.lama+')','number')}${inp('malam','Malam inap','number',0)}${inp('tarif_inap','Tarif inap/malam (bill hotel)','number',0)}${inp('tiket','Transport/tiket','number',0)}${inp('lain','Biaya lain','number',0)}</div><button>Tambah & Hitung</button></form>`:''}
+ <div class=card><h3>Pelaksana & Biaya (dihitung backend)</h3>${table([['nama','Nama',r=>`${r.nama}<br><small>${r.eselon}</small>`],['uang_harian','Harian',r=>rp(r.uang_harian)],['uang_inap','Inap',r=>rp(r.uang_inap)+(r.flag?' ⚠ >SBM':'')],['tiket','Tiket',r=>rp(r.tiket)],['taksi','Taksi',r=>rp(r.taksi)],['rep','Represent.',r=>rp(r.rep)],['lain','Lain',r=>rp(r.lain)],['jumlah','Jumlah',r=>`<b>${rp(r.jumlah)}</b>`]],s.spd,d?r=>`<a href=# onclick="event.preventDefault();rm(${id},${r.id})">Hapus</a>`:null)}<p><b>Total: ${rp(s.total)}</b></p></div>`;
+ if(d)$('#sp').onsubmit=async e=>{e.preventDefault();await api(`/st/${id}/spd`,{body:fd(e.target)});R.detail(id)}};
+window.act=async(id,a)=>{const b={};if(a=='terbitkan'&&!(b.nomor=prompt('Nomor Surat Tugas (dari unit TU):')))return;if(['kembalikan','batalkan'].includes(a)&&!(b.alasan=prompt('Alasan:')))return;await api(`/st/${id}/${a}`,{body:b});toast('Berhasil: '+a,1);R.detail(id)};
+window.del=async id=>{if(confirm('Hapus draft ini?')){await api('/st/'+id,{method:'DELETE'});location.hash='dash'}};window.rm=async(id,p)=>{await api(`/st/${id}/spd/${p}`,{method:'DELETE'});R.detail(id)};
+R.setuju=async()=>{const r=await api('/st?status=DIAJUKAN');$('#m').innerHTML=`<div class=bar><h2>Persetujuan / Penerbitan</h2></div><div class=card>${table([['id','ID'],['tujuan','Tujuan'],['tgl_berangkat','Berangkat'],['jml','Pelaksana'],['total','Total',r=>rp(r.total)]],r,r=>`<a class=btn href="#detail/${r.id}">Periksa</a>`)}</div>`};
+R.cetak=async()=>{const r=(await api('/st')).filter(x=>['TERBIT','SELESAI'].includes(x.status)),D=[['st','Surat Tugas'],['spd','SPD'],['rincian','Rincian'],['kuitansi','Kuitansi'],['nominatif','Nominatif']];
+ $('#m').innerHTML=`<div class=bar><h2>Cetak Dokumen</h2></div><div class=card>${table([['nomor','Nomor ST'],['tujuan','Tujuan'],['status','Status',r=>badge(r.status)]],r,r=>D.map(d=>`<a class="btn btn2" target=_blank href="/api/doc/${r.id}/${d[0]}?token=${TOK}">${d[1]}</a>`).join(' '))}<p><small>Dokumen terbuka di tab baru; gunakan Cetak → Simpan sebagai PDF. Riwayat cetak tercatat di Audit Trail.</small></p></div>`};
+const CF={pegawai:[['nama','Nama'],['nip','NIP'],['golongan','Golongan'],['jabatan','Jabatan'],['eselon','Eselon (I.a/II.a/III.a/IV.a)'],['unit_kerja','Unit kerja']],tarif:[['tahun','Tahun','number'],['provinsi','Provinsi'],['harian','Uang harian','number'],['inap1','Inap Eselon I','number'],['inap2','Inap Eselon II','number'],['inap3','Inap Eselon III','number'],['inap4','Inap Eselon IV','number'],['taksi','Taksi','number']],pejabat:[['peran','Peran'],['nama','Nama'],['nip','NIP'],['jabatan','Jabatan']],dasar_hukum:[['urutan','Urutan','number'],['teks','Teks']],users:[['username','Username'],['password','Password','password'],['nama','Nama lengkap'],['role','Role'],['pegawai_id','ID Pegawai (opsional)','number']]};
+async function master(n){const r=await api('/ref/'+n),c=CF[n];$('#m').innerHTML=`<div class=bar><h2>${M.find(x=>x[0]==n)[1]}</h2><input id=q placeholder=Cari... style="width:220px"></div><form class=card id=f><div class=g>${c.map(x=>x[0]=='role'?sel('role','Role',ALL):inp(x[0],x[1],x[2])).join('')}</div><button>Tambah / Simpan</button></form><div class=card id=t></div>`;
+ const T=()=>{const k=$('#q').value.toLowerCase();$('#t').innerHTML=table([['id','ID'],...c.filter(x=>x[0]!='password').map(x=>[x[0],x[1]]),['aktif','Aktif',r=>r.aktif===undefined?'':r.aktif?'Ya':'Tidak']],r.filter(x=>JSON.stringify(x).toLowerCase().includes(k)),n=='tarif'?null:r=>r.aktif===undefined?'':`<a href=# onclick="event.preventDefault();tg('${n}',${r.id},${r.aktif?0:1})">${r.aktif?'Nonaktifkan':'Aktifkan'}</a>`)};T();$('#q').oninput=T;
+ $('#f').onsubmit=async e=>{e.preventDefault();const b=fd(e.target);Object.keys(b).forEach(k=>b[k]===''&&delete b[k]);await api('/ref/'+n,{body:b});toast('Tersimpan',1);master(n)}}
+window.tg=async(n,i,v)=>{await api(`/ref/${n}/${i}`,{method:'PUT',body:{aktif:v}});master(n)};
+R.satker=async()=>{const s=await api('/ref/satker');$('#m').innerHTML=`<div class=bar><h2>Identitas Satker</h2></div><form class=card id=f><div class=g>${Object.keys(s).map(k=>inp(k,k.replace(/_/g,' '),'text',s[k])).join('')}</div><button>Simpan</button></form>`;$('#f').onsubmit=async e=>{e.preventDefault();await api('/ref/satker',{method:'PUT',body:fd(e.target)});toast('Tersimpan',1)}};
+R.audit=async()=>{const r=await api('/audit');$('#m').innerHTML=`<div class=bar><h2>Audit Trail</h2></div><div class=card>${table([['at','Waktu'],['user','User'],['aksi','Aksi'],['entitas','Entitas'],['eid','ID'],['detail','Detail']],r)}</div>`};
+draw();
+</script></body></html>
